@@ -32,7 +32,7 @@ public class Article extends BaseEntity{
     @Column(length = 10000)
     private String content;
 
-    private String hashtag;
+    @Setter private String hashtag;
 
     @ToString.Exclude
     @OrderBy("id")
